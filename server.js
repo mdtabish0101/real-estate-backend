@@ -1,13 +1,14 @@
-import express from "express"
 import dotenv from "dotenv"
+dotenv.config();
+import express from "express"
 import cors from "cors"
 import helmet from "helmet"
 import cookieParser from "cookie-parser"
 import morgan from "morgan"
 import connectDB from "./config/db.js"
-import authRoutes from "./routes/authRoutes.js"
+import authRoutes from "./routes/authRoute.js"
 
-dotenv.config();
+
 const app = express();
 
 // Middleware
@@ -18,6 +19,7 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 
 // Connect to Database
+
 connectDB();
 
 // Routes

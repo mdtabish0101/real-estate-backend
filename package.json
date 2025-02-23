@@ -7,14 +7,20 @@
     "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^6.0.0",
-    "dotenv": "^16.0.0",
-    "cors": "^2.8.5",
-    "helmet": "^6.0.0",
-    "jsonwebtoken": "^9.0.0",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.0.0",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "nodemon": "^3.1.9"
   }
 }
